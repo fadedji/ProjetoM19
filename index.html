@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Página Inicial</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Open+Sans:600'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div class="login-wrap" style="margin-top: 120px">
+	<div class="login-html">
+		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Login</label>
+		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Registo</label>
+		<div class="login-form" style="margin-top: 30px">
+			<form>
+				<div class="sign-in-htm">
+					<div class="group">
+						<label for="User" class="label">Username</label>
+						<input id="user" type="text" class="input" required>
+					</div>
+					<div class="group">
+						<label for="Pass" class="label">Password</label>
+						<input id="pass" type="password" class="input" data-type="password" required>
+					</div>
+					<div class="group">
+						<input id="check" type="checkbox" class="check" checked>
+						<label for="check"><span class="icon"></span> Lembrar-me</label>
+					</div>
+					<div class="group">
+						<input style="cursor: pointer" type="submit" class="button" value="Entrar">
+					</div>
+					<div class="hr" style="margin-top: 40px"></div>
+					<div class="foot-lnk">
+						<a href="#forgot">Esqueceu-se da password?</a>
+					</div>
+				</div>
+			</form>
+			<form method="POST" enctype="multipart/form-data" action="regutilizadores.php" target="_parent">
+				<div class="sign-up-htm">
+					<div class="group">
+						<label for="userr" class="label">Username</label>
+						<input id="user" type="text" class="input" name="user" required>
+					</div>
+					<div class="group">
+						<label for="passs" class="label">Password</label>
+						<input id="pass" type="password" class="input" name="pass" data-type="password" required required required>
+					</div>
+					<div class="group">
+						<label for="repasss" class="label">Repetir Password</label>
+						<input id="repass" type="password" class="input" name="repass" data-type="password" required required>
+					</div>
+					<div class="group">
+						<label for="emaill" class="label">Email</label>
+						<input id="email" type="email" class="input" name="email" required>
+					</div><br>
+					<div class="group">
+						<input style="cursor: pointer" type="submit" class="button" value="Registar">
+					</div>
+					<div class="hr" style="margin-top: 40px"></div>
+					<div class="foot-lnk" style="margin-top: -20px">
+						<label for="tab-1">Já tem uma conta?</a>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+  
+  
+
+</body>
+
+</html>
